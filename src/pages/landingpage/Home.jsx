@@ -9,6 +9,7 @@ import Lifelong from './sections/Lifelong'
 import Simplify from './sections/Simplify'
 import ArthaFeatures from './sections/ArthaFeatures'
 import ArthaIntelligence from './sections/ArthaIntelligence'
+import StayInformed from './sections/StayInformed'
 import ArthaSection from './sections/ArthaSection'
 
 
@@ -22,6 +23,7 @@ function Home( {setFromslow}) {
             <ArthaAI />
             <ArthaFeatures />
             <ArthaIntelligence />
+            <StayInformed />
             <ArthaSection />
 
 
