@@ -9,6 +9,7 @@ import Lifelong from './sections/Lifelong'
 import Simplify from './sections/Simplify'
 import ArthaFeatures from './sections/ArthaFeatures'
 import ArthaIntelligence from './sections/ArthaIntelligence'
+import ArthaSection from './sections/ArthaSection'
 
 
 
@@ -21,6 +22,7 @@ function Home( {setFromslow}) {
             <ArthaAI />
             <ArthaFeatures />
             <ArthaIntelligence />
+            <ArthaSection />
 
 
             <div className='bg-white py-10'>
