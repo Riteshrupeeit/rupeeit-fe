@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from './sections/Hero'
+import Simplify from './sections/Simplify'
+import Learn from './sections/Learn'
 import Lifelong from './sections/Lifelong'
 import Becauselearning from './sections/Becauselearning'
 import Journey from './sections/Journey'
@@ -10,6 +12,8 @@ function Home( {setFromslow}) {
     return (
         <div className="relative">
             <Header setFromslow={setFromslow} />
+            <Simplify />
+            <Learn />
             <div className='bg-white py-10'>
                 <Lifelong />
                 <Becauselearning />
