@@ -8,6 +8,8 @@ import Learn from './sections/Learn'
 import Lifelong from './sections/Lifelong'
 import Simplify from './sections/Simplify'
 import ArthaFeatures from './sections/ArthaFeatures'
+import ArthaIntelligence from './sections/ArthaIntelligence'
+
 
 
 function Home( {setFromslow}) {
@@ -18,6 +20,8 @@ function Home( {setFromslow}) {
             <Learn />
             <ArthaAI />
             <ArthaFeatures />
+            <ArthaIntelligence />
+
 
             <div className='bg-white py-10'>
                 <Lifelong />
