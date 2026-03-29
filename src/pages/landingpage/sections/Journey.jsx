@@ -10,7 +10,7 @@ function Journey({ setFromslow }) {
 
                     {/* Stat 1 */}
                     <div className='flex items-center gap-3 text-center md:text-left'>
-                        <img src="./img/usergool.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
+                        <img src="/img/usergool.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
                         <h1 className='text-primary text-lg sm:text-xl md:text-2xl font-medium'>
                             1000+ Indians <br className='2xl:hidden' /> learning daily
                         </h1>
@@ -18,7 +18,7 @@ function Journey({ setFromslow }) {
 
                     {/* Stat 2 */}
                     <div className='flex items-center gap-3 text-center md:text-left'>
-                        <img src="./img/videoimg.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
+                        <img src="/img/videoimg.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
                         <h1 className='text-primary text-lg sm:text-xl md:text-2xl font-medium'>
                             1000+ <br className='md:hidden' /> Videos
                         </h1>
@@ -26,7 +26,7 @@ function Journey({ setFromslow }) {
 
                     {/* Stat 3 */}
                     <div className='flex items-center gap-3 text-center md:text-left'>
-                        <img src="./img/tiemimg.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
+                        <img src="/img/tiemimg.png" alt="" className='max-w-[60px] sm:max-w-[70px] md:max-w-[80px]' />
                         <h1 className='text-primary text-lg sm:text-xl md:text-2xl font-medium'>
                             50+ Verified <br className='md:hidden' /> Experts
                         </h1>

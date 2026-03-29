@@ -5,7 +5,7 @@ function Header() {
     return (
         <div
             className="mt-20 md:mt-10 h-auto xl:h-[600px] flex flex-col xl:flex-row items-center relative bg-cover bg-no-repeat"
-            style={{ backgroundImage: "url('./img/pattern 1.png')" }}
+            style={{ backgroundImage: "url('/img/pattern 1.png')" }}
         >
             <div className='flex flex-col-reverse xl:flex-row items-center justify-between relative w-full px-5 sm:px-10 xl:px-0'>
 
@@ -32,21 +32,21 @@ function Header() {
 
                 {/* Right Side Image */}
                 <div className='relative w-full xl:w-auto flex justify-center xl:justify-end mt-6 xl:mt-0'>
-                    <img src="./img/heder2.png" alt="" className='cahk w-[100%]  xl:w-auto' />
+                    <img src="/img/heder2.png" alt="" className='cahk w-[100%]  xl:w-auto' />
 
                     {/* Background vectors (hidden on small screens) */}
                     <div className='absolute right-0 top-0 h-full  md:block'>
-                        <img src="./img/Vector 1 (1).png" alt="" />
+                        <img src="/img/Vector 1 (1).png" alt="" />
                     </div>
                     <div className='absolute bottom-[-60%] left-[-61%]  lg:block'>
-                        <img src="./img/Vector 2.png" alt="" />
+                        <img src="/img/Vector 2.png" alt="" />
                     </div>
                 </div>
             </div>
 
             {/* Left Background Vector */}
             <div className='absolute left-0 bottom-0 w-[40%] h-full hidden xl:block'>
-                <img src="./img/Vector 1 (1).png" alt="" />
+                <img src="/img/Vector 1 (1).png" alt="" />
             </div>
         </div>
     )

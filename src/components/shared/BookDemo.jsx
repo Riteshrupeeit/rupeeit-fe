@@ -6,7 +6,7 @@ function BookDemo() {
             {/* Background line image */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-30"
-                style={{ backgroundImage: `url('./img/pattern 1.png')` }}
+                style={{ backgroundImage: `url('/img/pattern 1.png')` }}
             ></div>
 
             {/* Main content */}

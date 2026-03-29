@@ -114,7 +114,7 @@ export default function FAQ() {
 
                     {/* Background Line Image */}
                     <img
-                        src="./img/Line1(1).png"
+                        src="/img/Line1(1).png"
                         alt=""
                         className="absolute hidden  lg:block top-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-xs sm:max-w-sm md:max-w-md opacity-20 pointer-events-none"
                     />

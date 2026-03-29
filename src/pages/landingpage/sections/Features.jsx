@@ -3,7 +3,7 @@ import React from 'react'
 const FeaturesData = [
     {
         id: 1,
-        img: "./img/rupeeit 10.png",
+        img: "/img/rupeeit 10.png",
         title1: "Short, interactive",
         title2: "videos for ",
         title3: "quick learning"
@@ -11,28 +11,28 @@ const FeaturesData = [
 
     {
         id: 2,
-        img: "./img/rupeeit 9.png",
+        img: "/img/rupeeit 9.png",
         title1: "Daily fresh",
         title2: "content in",
         title3: "English + Hindi"
     },
     {
         id: 3,
-        img: "./img/rupeeit 5.png",
+        img: "/img/rupeeit 5.png",
         title1: "Created by",
         title2: "certified financial",
         title3: "professionals"
     },
     {
         id: 4,
-        img: "./img/rupeeit 3.png",
+        img: "/img/rupeeit 3.png",
         title1: "No eligibility",
         title2: "criteria – anyone",
         title3: "can learn from anywhere"
     },
     {
         id: 5,
-        img: "./img/rupeeit 7.png",
+        img: "/img/rupeeit 7.png",
         title1: "Live",
         title2: "sessions & ",
         title3: "workshops with experts"

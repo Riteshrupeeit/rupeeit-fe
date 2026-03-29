@@ -74,7 +74,7 @@ function Blogs() {
                                         <div className="mt-6 flex items-center justify-between">
                                             <div className="flex items-center gap-4">
                                                 <img
-                                                    src="./img/logoru.png"
+                                                    src="/img/logoru.png"
                                                     alt="Rupeeit"
                                                     className=" rounded-full object-cover max-w-[100px]"
                                                 />

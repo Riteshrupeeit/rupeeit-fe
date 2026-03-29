@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Creator from './Creator'
 import Benefitscreator from './Benefitscreator'
-import BookDemo from '../../components/BookDemo'
+import BookDemo from '../../components/shared/BookDemo'
 
 function BecomeHomepage() {
     return (

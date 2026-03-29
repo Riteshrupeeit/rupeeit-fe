@@ -2,19 +2,19 @@ import React from "react";
 
 const MarqueeScroll = () => {
     const imagesRow1 = [
-        "./img/photos1.jpg",
-        "./img/photos2.jpg",
-        "./img/photos3.jpg",
-        "./img/photos4.jpg",
-        "./img/photos5.jpg",
+        "/img/photos1.jpg",
+        "/img/photos2.jpg",
+        "/img/photos3.jpg",
+        "/img/photos4.jpg",
+        "/img/photos5.jpg",
     ];
 
     const imagesRow2 = [
-        "./img/photos6.png",
-        "./img/photos7.png",
-        "./img/photos8.png",
-        "./img/photos10.png",
-        "./img/photos11.png",
+        "/img/photos6.png",
+        "/img/photos7.png",
+        "/img/photos8.png",
+        "/img/photos10.png",
+        "/img/photos11.png",
     ];
 
     return (

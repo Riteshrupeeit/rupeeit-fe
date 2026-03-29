@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Rout from "./route/Rout";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 function App() {
   // Define the query client outside of the return
