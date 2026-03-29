@@ -7,6 +7,8 @@ import Journey from './sections/Journey'
 import Learn from './sections/Learn'
 import Lifelong from './sections/Lifelong'
 import Simplify from './sections/Simplify'
+import ArthaFeatures from './sections/ArthaFeatures'
+
 
 function Home( {setFromslow}) {
     return (
@@ -15,6 +17,8 @@ function Home( {setFromslow}) {
             <Simplify />
             <Learn />
             <ArthaAI />
+            <ArthaFeatures />
+
             <div className='bg-white py-10'>
                 <Lifelong />
                 <Becauselearning />
