@@ -3,7 +3,7 @@ import React from 'react';
 const AlertCard = ({ title, description }) => {
     return (
         <div 
-            className="flex flex-col items-start p-8 gap-[39px] w-full md:w-[328px] h-[200px] rounded-2xl"
+            className="flex flex-col items-start p-8 gap-6 md:gap-[39px] w-full md:w-[328px] min-h-[160px] md:h-[200px] rounded-2xl"
             style={{ 
                 background: 'linear-gradient(135deg, #2B2B2C 0%, #131313 100%), #2E2E2E',
                 flex: 'none',
@@ -43,11 +43,11 @@ const ArthaAlerts = () => {
     ];
 
     return (
-        <section className="bg-[#0A0A0A] py-24 px-4 w-full">
-            <div className="flex flex-col items-center justify-center gap-[100px] max-w-[1360px] mx-auto min-h-[644px]">
+        <section className="bg-[#0A0A0A] py-16 md:py-24 px-4 w-full overflow-hidden">
+            <div className="flex flex-col items-center justify-center gap-12 md:gap-[100px] max-w-[1360px] mx-auto min-h-fit md:min-h-[644px]">
                 {/* Header Section */}
                 <div className="flex flex-col items-center gap-6 max-w-[776px] w-full">
-                    <h2 className="w-full text-[#FAFAFA] font-['Crimson_Text'] italic font-normal text-6xl md:text-[100px] leading-[100px] flex items-center justify-center text-center">
+                    <h2 className="w-full text-[#FAFAFA] font-['Crimson_Text'] italic font-normal text-5xl sm:text-6xl md:text-7xl lg:text-[100px] leading-[1.1] flex items-center justify-center text-center">
                         Never miss a money move.
                     </h2>
                     
@@ -68,7 +68,7 @@ const ArthaAlerts = () => {
                 </div>
 
                 {/* Cards Grid */}
-                <div className="flex flex-col md:flex-row items-start justify-center p-0 gap-4 w-full">
+                <div className="flex flex-wrap items-center justify-center p-0 gap-4 md:gap-6 w-full max-w-[1360px]">
                     {alerts.map((alert, index) => (
                         <AlertCard 
                             key={index}

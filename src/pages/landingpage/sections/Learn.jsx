@@ -58,15 +58,13 @@ function Learn() {
                 </button>
             </div>
 
-            {/* Cards Grid - Using fixed width/height container for the grid to match 443x3 spacing */}
-            <div className="flex flex-wrap justify-center gap-10 w-full max-w-[1425px]">
+            {/* Cards Grid - Responsive layout */}
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 w-full max-w-[1425px]">
                 {cards.map((card, index) => (
                     <div 
                         key={index} 
-                        className="relative rounded-[16px] overflow-hidden group shrink-0"
+                        className="relative rounded-[16px] overflow-hidden group w-full max-w-[443px] h-[520px] sm:h-[600px] md:h-[700px]"
                         style={{ 
-                            width: '443px',
-                            height: '700px',
                             background: '#0F1011'
                         }}
                     >
@@ -85,14 +83,12 @@ function Learn() {
                             }}
                         />
 
-                        {/* Illustration Container (Frame 1707480010) */}
+                        {/* Illustration Container */}
                         <div 
-                            className="absolute z-10 flex items-center justify-center pointer-events-none"
+                            className="absolute z-10 flex items-center justify-center pointer-events-none left-5 right-5"
                             style={{ 
-                                left: '20px',
-                                top: '129.68px',
-                                width: '403px',
-                                height: index === 1 ? '372px' : '313px' // 372px for the 2nd card as per Figma
+                                top: '15%',
+                                height: index === 1 ? '53%' : '45%' // Adjust height based on card index
                             }}
                         >
                            
@@ -105,16 +101,9 @@ function Learn() {
                             />
                         </div>
 
-                        {/* Text Wrapper (track__card-text-wrapper) */}
+                        {/* Text Wrapper */}
                         <div 
-                            className="absolute flex flex-col items-start"
-                            style={{ 
-                                left: '24px',
-                                top: '580.25px',
-                                width: '395px',
-                                height: '96px',
-                                gap: '8px'
-                            }}
+                            className="absolute bottom-6 left-6 right-6 flex flex-col gap-2 z-20"
                         >
                             {/* Title: Real experts, not influencers */}
                             <h3 
