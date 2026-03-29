@@ -1,12 +1,12 @@
-import React from 'react'
+import FloatingLogo from '../../components/layout/FloatingLogo'
+import ArthaAI from './sections/ArthaAI'
+import Becauselearning from './sections/Becauselearning'
+import FAQ from './sections/FAQ'
 import Header from './sections/Hero'
-import Simplify from './sections/Simplify'
+import Journey from './sections/Journey'
 import Learn from './sections/Learn'
 import Lifelong from './sections/Lifelong'
-import Becauselearning from './sections/Becauselearning'
-import Journey from './sections/Journey'
-import FAQ from './sections/FAQ'
-import FloatingLogo from '../../components/layout/FloatingLogo'
+import Simplify from './sections/Simplify'
 
 function Home( {setFromslow}) {
     return (
@@ -14,6 +14,7 @@ function Home( {setFromslow}) {
             <Header setFromslow={setFromslow} />
             <Simplify />
             <Learn />
+            <ArthaAI />
             <div className='bg-white py-10'>
                 <Lifelong />
                 <Becauselearning />
