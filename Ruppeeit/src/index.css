@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.seconfdont {
+  font-family: "Poppins", sans-serif;
+}
+
+.padding {
+  padding: 10px 4%;
+}
+
+.padding2 {
+  padding: 10px 7rem;
+}
+@media(max-width:1200px){
+  .padding{
+    padding: 10px 3%;
+
+  }
+  .padding2{
+      padding: 10px 5rem;
+  }
+}
+@media(max-width:900px){
+  .padding2{
+      padding: 10px 1rem;
+  }
+  .padding{
+    padding: 10px 2%;
+
+  }
+}
+
+  
+.navboxsedo {
+  box-shadow: 0px 0px 17px -5px #FEB201;
+}
+
+.hedersedo {
+  box-shadow: -1px 1px 32px 4px #FEB201;
+}
+
+.bgwithborder {
+  border-radius: 20px;
+  background: linear-gradient(132deg, rgba(255, 255, 255, 0.20) 70.77%, rgba(255, 178, 0, 0.20) 100%);
+  box-shadow: 7px 4px 4px -2px rgba(255, 178, 0, 0.20);
+  backdrop-filter: blur(2px);
+  flex-shrink: 0;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee__group {
+  display: flex;
+  animation: scroll-left 18s linear infinite;
+}
+
+.marquee--reverse .marquee__group {
+  animation: scroll-right 18s linear infinite;
+}
+
+/* First row scroll left */
+@keyframes scroll-left {
+  from {
+    /* transform: translateX(0); */
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Second row scroll right */
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cahk {
+  aspect-ratio: 710/473;
+}
+.bookdemo{
+  width: 1200px;
+   height: 1200px;
+   box-shadow: 5px 20px 186px 37px #FAC817;
+   top: 0px;
+   background-color: #FAC817;
+   opacity: 0.8;
+   top: -270%;
+   z-index: -1;
+   filter: drop-shadow(2px 7px 17px #FAC817);
+
+}
+
+
+@media(max-width:650px){
+  .bookdemo{
+      height: 400px;
+  }
+  }

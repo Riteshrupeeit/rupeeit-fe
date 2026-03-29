@@ -1,0 +1,43 @@
+B — Deploy with Vercel CLI (fast, useful for one-off deploys or CI)
+
+From your project root, install or use the CLI:
+
+# either install globally
+npm i -g vercel
+
+# or use npx (no global install)
+npx vercel login
+
+
+Login via the CLI: npx vercel login (enter email, follow link). 
+Vercel
++1
+
+Deploy:
+
+# Preview deployment
+npx vercel
+
+# Deploy to production (use project settings/domain for prod)
+npx vercel --prod
+
+
+If you already built locally and want to upload the build folder:
+
+npx vercel build --prod
+npx vercel deploy --prebuilt --prod
+
+
+(These flows and --prod behaviour are documented in Vercel’s CLI docs.) 
+Vercel
+
+C — Make React Router (BrowserRouter) deep links work — vercel.json
+
+If you use BrowserRouter, refresh or visiting /profile directly may return Vercel’s 404 unless you rewrite requests to index.html. Create a vercel.json in the project root:
+
+// vercel.json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
