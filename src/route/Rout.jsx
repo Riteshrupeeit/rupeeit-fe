@@ -18,7 +18,7 @@ function Rout() {
     return (
         <div>
             <Navbar isOpen={isOpen} setIsOpen={setIsOpen} setFromslow={setFromslow} />
-            <ClientOnboardingForm fromslow={fromslow} setFromslow={setFromslow} />
+            {/* <ClientOnboardingForm fromslow={fromslow} setFromslow={setFromslow} /> */}
             <Routes>
                 <Route path='/' element={<Home setFromslow={setFromslow} />} />
                 <Route path='/BecomeaCreator' element={<BecomeHomepage />} />

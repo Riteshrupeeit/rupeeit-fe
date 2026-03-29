@@ -1,37 +1,71 @@
-import React from 'react'
 
-function RuppeeitAppimg({ setFromslow }) {
+const RuppeeitAppimg = ({ setFromslow }) => {
     return (
-        <>
-            <div className='mt-10 flex gap-3 flex-wrap justify-center 2xl:justify-between w-full'>
-                <div className=' w-full h-[760px] xl:w-[540px] rounded-[30px] bg-black  px-5 relative overflow-hidden flex items-center flex-col'>
-                    <h1 className='font-medium text-secondri text-center text-3xl mt-12'>Download the </h1>
-                    <h1 className='font-medium text-secondri text-center text-3xl'>Rupeeit App</h1>
+        <section 
+            className="relative w-full overflow-hidden min-h-[700px] flex flex-col items-center justify-start pt-12 md:pt-20"
+            style={{
+                backgroundImage: "url('/img/leaf_final.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundColor: '#000'
+            }}
+        >
+            {/* Soft Dark Vignette Overlay */}
+            <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
 
-                    <img src="/img/iPhone 13 Pro.png" alt="" className='absolute bottom-[0%] ' />
-                </div>
-                <div className='flex flex-col gap-4 flex-wrap w-full xl:w-auto'>
-                    <div className='w-full h-[250px] sm:h-[400px] md:h-[350px] xl:w-[540px] xl:h-[238px] bg-black rounded-[30px] flex  items-center flex-col pt-3 px-3 relative '>
-                        <h1 className='text-primary font-medium text-[25px] relative text-center '>Signup in 2 minutes</h1>
-                        <img src="/img/SignupEmail 1.png" alt="" className='absolute bottom-0 w-[74%] sm:w-[500px] xl:w-auto ' />
-                    </div>
-                    <div className='w-full h-[250px] sm:h-[400px] md:h-[350px] xl:w-[540px] xl:h-[238px] bg-black rounded-[30px] flex  items-center flex-col pt-3 px-3 relative '>
-                        <h1 className='text-primary font-medium text-[25px] relative text-center '>Access videos instantly</h1>
-                        <img src="/img/HomeScreenver2. 1.png" alt="" className='absolute bottom-0 w-[74%] sm:w-[500px] xl:w-auto ' />
-                    </div>
-                    <div className='w-full h-[250px] sm:h-[400px] md:h-[350px] xl:w-[540px] xl:h-[238px] bg-black rounded-[30px] flex  items-center flex-col pt-3 px-3 relative '>
-                        <h1 className='text-primary font-medium text-[25px] relative  text-center'>Save, Like & Share</h1>
-                        <img src="/img/Flow screen 1.png" alt="" className='absolute bottom-0 w-[65%] sm:w-[450px] xl:w-auto ' />
-                    </div>
+            <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center w-full max-w-[1200px]">
+                {/* Badge/Tag */}
+                <div className="mb-6 rounded-md bg-[#67E8F9] px-4 py-1.5 flex items-center justify-center shadow-lg">
+                    <span className="text-[10px] md:text-[12px] font-bold tracking-[0.15em] text-black uppercase font-['Roboto_Mono']">
+                        Built for India
+                    </span>
                 </div>
 
-            </div>
-            <div className='flex items-center justify-center w-full mt-20 mb-16'>
-                <button className='font-bold text-2xl  text-primary 
-                py-5 md:py-4 px-3 w-[300px] md:w-[350px] bg-[#0E0D05] rounded-[50px]' onClick={() => setFromslow(true)}>Download app</button>
-            </div>
-        </>
-    )
-}
+                {/* Main Heading */}
+                <h2 className="mb-4 font-['Crimson_Text'] text-5xl md:text-[100px] font-normal leading-tight text-white italic drop-shadow-2xl">
+                    Download Rupeeit.
+                </h2>
 
-export default RuppeeitAppimg
+                {/* Support Text */}
+                <p className="mb-10 text-[16px] md:text-[20px] text-[rgba(255,255,255,0.7)] font-['Poppins'] tracking-wide">
+                    Money made simple!
+                </p>
+
+                {/* Action Button */}
+                <button 
+                    className="group mb-12 flex items-center gap-3 rounded-[8px] bg-white px-10 py-4 text-[14px] font-bold text-black transition-all hover:bg-white/90 hover:scale-105 shadow-xl"
+                >
+                    <span className="font-['Roboto_Mono'] uppercase tracking-[0.1em]">Get Started</span>
+                    <svg 
+                        width="18" 
+                        height="18" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="3" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                        className="transition-transform group-hover:translate-x-1"
+                    >
+                        <path d="M5 12h14m-7-7 7 7-7 7" />
+                    </svg>
+                </button>
+
+                {/* App Mockup Rendering */}
+                <div className="relative mx-auto w-full max-w-[280px] md:max-w-[400px]">
+                    <div className="relative z-10 overflow-hidden rounded-[30px] transition-transform duration-700 hover:scale-105">
+                        <img 
+                            src="/img/download_image.png" 
+                            alt="Rupeeit Application" 
+                            className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
+                        />
+                    </div>
+                    {/* Perspective Lighting Effect */}
+                    <div className="absolute -bottom-10 left-1/2 h-[100px] w-full -translate-x-1/2 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none" />
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default RuppeeitAppimg;

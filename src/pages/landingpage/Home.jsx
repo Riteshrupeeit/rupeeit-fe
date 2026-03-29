@@ -1,18 +1,14 @@
 import FloatingLogo from '../../components/layout/FloatingLogo'
 import ArthaAI from './sections/ArthaAI'
+import ArthaAlerts from './sections/ArthaAlerts'
 import ArthaFeatures from './sections/ArthaFeatures'
 import ArthaIntelligence from './sections/ArthaIntelligence'
 import ArthaSection from './sections/ArthaSection'
-import Becauselearning from './sections/Becauselearning'
-import FAQ from './sections/FAQ'
 import Header from './sections/Hero'
-import Journey from './sections/Journey'
 import Learn from './sections/Learn'
-import Lifelong from './sections/Lifelong'
+import RuppeeitAppimg from './sections/RuppeeitAppimg'
 import Simplify from './sections/Simplify'
 import StayInformed from './sections/StayInformed'
-import ArthaAlerts from './sections/ArthaAlerts'
-
 
 
 function Home( {setFromslow}) {
@@ -29,12 +25,13 @@ function Home( {setFromslow}) {
             <ArthaAlerts />
 
 
-            <div className='bg-white py-10'>
+            {/* <div className='bg-white py-10'>
                 <Lifelong />
                 <Becauselearning />
                 <Journey setFromslow={setFromslow} />
-            </div>
-            <FAQ />
+            </div> */}
+            {/* <FAQ /> */}
+            <RuppeeitAppimg setFromslow={setFromslow} />
             <FloatingLogo />
         </div>
     )
