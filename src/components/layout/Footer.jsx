@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaApple, FaGooglePlay } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-gray-300 padding2 py-12 mt-14">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
 
                 {/* Logo + About */}
                 <div>
@@ -29,6 +29,39 @@ const Footer = () => {
                         <li><NavLink to="/privacy-policy" className="hover:text-yellow-400 transition">Privacy Policy</NavLink></li>
 
                     </ul>
+                </div>
+
+                {/* Download App Section */}
+                <div>
+                    <h2 className="text-white text-lg font-semibold mb-4">Download the Rupeeit App</h2>
+                    <div className="flex flex-col space-y-3 items-center md:items-start">
+                        {/* App Store */}
+                        <a 
+                            href="https://apps.apple.com/in/app/rupeeit/id6760304530" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center bg-[#111111] text-white px-4 py-2 rounded-xl border border-gray-800 hover:bg-gray-900 transition-all w-48"
+                        >
+                            <FaApple className="text-2xl mr-3 text-white" />
+                            <div className="text-left">
+                                <p className="text-[10px] text-gray-400 uppercase leading-none">Download on the</p>
+                                <p className="text-[15px] font-semibold leading-tight">App Store</p>
+                            </div>
+                        </a>
+                        {/* Google Play */}
+                        <a 
+                            href="https://play.google.com/store/apps/details?id=com.protip.rupeeIt" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center bg-[#111111] text-white px-4 py-2 rounded-xl border border-gray-800 hover:bg-gray-900 transition-all w-48"
+                        >
+                            <FaGooglePlay className="text-xl mr-3 text-white" />
+                            <div className="text-left">
+                                <p className="text-[10px] text-gray-400 uppercase leading-none">Get it on</p>
+                                <p className="text-[15px] font-semibold leading-tight">Google Play</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 {/* Company Links */}
