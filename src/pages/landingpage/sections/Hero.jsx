@@ -100,7 +100,7 @@ function Header({ setFromslow }) {
                         width: '141px', 
                         height: '48px' 
                     }}
-                    onClick={() => setFromslow(true)}
+                    onClick={() => window.open('https://api.rupeeit.in/download', '_blank')}
                 >
                     <span 
                         className="flex items-center uppercase"

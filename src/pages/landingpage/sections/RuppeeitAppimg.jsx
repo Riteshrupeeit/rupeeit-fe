@@ -34,6 +34,7 @@ const RuppeeitAppimg = ({ setFromslow }) => {
                 {/* Action Button */}
                 <button 
                     className="group mb-12 flex items-center gap-3 rounded-[8px] bg-white px-10 py-4 text-[14px] font-bold text-black transition-all hover:bg-white/90 hover:scale-105 shadow-xl"
+                    onClick={() => window.open('https://api.rupeeit.in/download', '_blank')}
                 >
                     <span className="font-['Roboto_Mono'] uppercase tracking-[0.1em]">Get Started</span>
                     <svg 

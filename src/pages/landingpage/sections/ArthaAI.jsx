@@ -166,7 +166,7 @@ const ArthaAI = () => {
                             type="text" 
                             disabled
                             value={typedText}
-                            placeholder="How should I invest" 
+                            placeholder="" 
                             className="bg-transparent border-none outline-none text-[#FFFFFF] font-['Poppins'] font-medium text-lg w-full placeholder:text-white/30"
                         />
                         {/* Cursor indicator */}
@@ -202,8 +202,12 @@ const ArthaAI = () => {
                         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-purple-500/10 blur-[100px] rounded-full" />
 
                         <div ref={headerRef} className="flex items-center gap-5 mb-8">
-                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#3177DF] to-[#F08FE9] flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/20 rotate-3">
-                                <span className="text-white text-[14px] font-bold tracking-wider">AI</span>
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 shadow-lg rotate-3 overflow-hidden">
+                                <img 
+                                    src="/img/artha/artha_logo.png" 
+                                    alt="Artha Logo" 
+                                    className="w-8 h-8 object-contain"
+                                />
                             </div>
                             <div>
                                 <h3 className="text-white font-['Poppins'] font-semibold text-xl tracking-tight">Artha Intelligence</h3>

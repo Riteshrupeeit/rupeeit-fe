@@ -41,7 +41,7 @@ function Navbar({ setIsOpen, isOpen, setFromslow }) {
             <div className="hidden md:block">
                 <button
                     className="bg-white text-black text-sm font-bold px-6 py-2.5 rounded-lg flex items-center gap-2 hover:bg-gray-200 transition-colors"
-                    onClick={() => setFromslow(true)}
+                    onClick={() => window.open('https://api.rupeeit.in/download', '_blank')}
                 >
                     GET STARTED <FaArrowRight size={14} />
                 </button>
@@ -74,7 +74,7 @@ function Navbar({ setIsOpen, isOpen, setFromslow }) {
                     <button
                         className="bg-white text-black font-bold px-8 py-3 rounded-lg flex items-center gap-2 mt-4"
                         onClick={() => {
-                            setFromslow(true)
+                            window.open('https://api.rupeeit.in/download', '_blank')
                             setIsOpen(false)
                         }}
                     >
