@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2N88CMJPDS.com.protip.rupeeIt",
+        "paths": ["/videos/share/*", "/download", "/artha"]
+      }
+    ]
+  }
+}
