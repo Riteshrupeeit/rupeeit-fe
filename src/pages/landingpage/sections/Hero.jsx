@@ -5,9 +5,9 @@ function Header({ setFromslow }) {
     return (
         <div className="relative min-h-[100vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
             {/* Background Image with Overlay */}
-            <div 
+            <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ 
+                style={{
                     backgroundImage: "url('/img/hero-bg-exact.png')",
                     filter: "brightness(0.7)"
                 }}
@@ -15,11 +15,11 @@ function Header({ setFromslow }) {
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
 
             {/* Content Container (Frame 34404) */}
-            <div className="relative z-10 flex flex-col items-center gap-8 max-w-[702px] mt-10">
-                
+            <div className="relative z-10 flex flex-col items-center gap-8 max-w-[902px] mt-10">
+
                 {/* Frame 34402 -> Div [promobar] */}
                 <div className="flex flex-col items-center gap-6">
-                    <div 
+                    {/* <div 
                         className="flex flex-row justify-center items-center py-[6px] px-[10px] gap-[10px] rounded-lg"
                         style={{ 
                             background: 'linear-gradient(180deg, #D7F5FF 0%, #D7F5FF 100%)',
@@ -41,31 +41,31 @@ function Header({ setFromslow }) {
                         >
                             With AI & Experts
                         </span>
-                    </div>
+                    </div> */}
 
                     {/* Frame 34401 */}
                     <div className="flex flex-col items-center gap-6">
                         {/* Heading: Make Smarter Money Decisions. */}
-                        <h1 
+                        <h1
                             className="italic flex items-center justify-center text-center"
-                            style={{ 
+                            style={{
                                 fontFamily: "'Crimson Text', serif",
                                 fontWeight: 400,
                                 fontSize: 'clamp(40px, 10vw, 100px)',
                                 lineHeight: 'clamp(40px, 10vw, 100px)',
                                 color: '#FFFFFF',
                                 width: '100%',
-                                maxWidth: '702px'
+                                maxWidth: '902x'
                             }}
                         >
-                            Make Smarter Money Decisions.
+                            India's AI-first stocks & mutual fund intelligence platform.
                         </h1>
 
                         {/* Frame 34400 -> Description */}
                         <div className="flex flex-col items-center max-w-[581px]">
-                            <p 
+                            <p
                                 className="flex items-center justify-center text-center"
-                                style={{ 
+                                style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontWeight: 400,
                                     fontSize: '16px',
@@ -76,9 +76,9 @@ function Header({ setFromslow }) {
                             >
                                 RupeeIt is your AI-powered financial intelligence platform.
                             </p>
-                            <p 
+                            <p
                                 className="flex items-center justify-center text-center"
-                                style={{ 
+                                style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontWeight: 400,
                                     fontSize: '16px',
@@ -87,7 +87,7 @@ function Header({ setFromslow }) {
                                     width: '100%'
                                 }}
                             >
-                                Discover market insights and news, learn from trusted experts, and turn knowledge into confident money decisions all in one place.
+                                Ask anything about stocks or mutual funds get expert level, research  insights in 2 minutes
                             </p>
                         </div>
                     </div>
@@ -96,15 +96,15 @@ function Header({ setFromslow }) {
                 {/* Link [button] */}
                 <button
                     className="flex flex-row items-center justify-center py-3 px-5 gap-1 rounded-lg bg-white group hover:bg-gray-200 transition-colors"
-                    style={{ 
-                        width: '141px', 
-                        height: '48px' 
+                    style={{
+                        width: '141px',
+                        height: '48px'
                     }}
                     onClick={() => window.open('https://api.rupeeit.in/download', '_blank')}
                 >
-                    <span 
+                    <span
                         className="flex items-center uppercase"
-                        style={{ 
+                        style={{
                             fontFamily: "'Roboto Mono', monospace",
                             fontWeight: 500,
                             fontSize: '12px',
@@ -115,9 +115,9 @@ function Header({ setFromslow }) {
                     >
                         Get Started
                     </span>
-                    <FaArrowRight 
-                        size={15} 
-                        color="#01000A" 
+                    <FaArrowRight
+                        size={15}
+                        color="#01000A"
                         className="group-hover:translate-x-1 transition-transform"
                     />
                 </button>

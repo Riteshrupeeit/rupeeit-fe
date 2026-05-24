@@ -1,21 +1,20 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 function FloatingLogo() {
     return (
         <div className="fixed bottom-6 right-6 z-[9999]">
-            <NavLink 
-                to="/" 
-                className="flex items-center justify-center w-12 h-12 rounded-full overflow-hidden shadow-[0_0_20px_rgba(254,178,1,0.3)] border border-[#FEB201]/30 bg-black/50 backdrop-blur-md hover:scale-110 transition-transform duration-300 group"
+            <a 
+                href="https://chat.whatsapp.com/JTvuY0Asnrt4h2cgxlIoqu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.4)] bg-[#25D366] hover:bg-[#128C7E] text-white hover:scale-105 transition-all duration-300 group"
             >
-                <img 
-                    src="/img/logoru.png" 
-                    alt="Sticky Logo" 
-                    className="w-full h-full object-contain p-2 group-hover:rotate-12 transition-transform"
-                />
-            </NavLink>
+                <FaWhatsapp className="text-2xl" />
+                <span className="font-medium text-sm md:text-base whitespace-nowrap">Join Community</span>
+            </a>
         </div>
-    )
+    );
 }
 
-export default FloatingLogo
+export default FloatingLogo;

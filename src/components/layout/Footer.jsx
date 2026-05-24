@@ -36,9 +36,9 @@ const Footer = () => {
                     <h2 className="text-white text-lg font-semibold mb-4">Download the Rupeeit App</h2>
                     <div className="flex flex-col space-y-3 items-center md:items-start">
                         {/* App Store */}
-                        <a 
-                            href="https://apps.apple.com/in/app/rupeeit/id6760304530" 
-                            target="_blank" 
+                        <a
+                            href="https://apps.apple.com/in/app/rupeeit/id6760304530"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center bg-[#111111] text-white px-4 py-2 rounded-xl border border-gray-800 hover:bg-gray-900 transition-all w-48"
                         >
@@ -49,9 +49,9 @@ const Footer = () => {
                             </div>
                         </a>
                         {/* Google Play */}
-                        <a 
-                            href="https://play.google.com/store/apps/details?id=com.protip.rupeeIt" 
-                            target="_blank" 
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.protip.rupeeIt"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center bg-[#111111] text-white px-4 py-2 rounded-xl border border-gray-800 hover:bg-gray-900 transition-all w-48"
                         >
@@ -78,7 +78,7 @@ const Footer = () => {
                 <div>
                     <h2 className="text-white text-lg font-semibold mb-4">Contact</h2>
                     <p className="text-sm mb-1 hover:text-yellow-400 cursor-pointer">📧 Support : Support@rupeeit.in</p>
-                    <p className="text-sm mb-4 hover:text-yellow-400 cursor-pointer">📧 Enquiry : connect@rupeeit.in</p>
+                    {/* <p className="text-sm mb-4 hover:text-yellow-400 cursor-pointer">📧 Enquiry : connect@rupeeit.in</p> */}
                     <div className="flex justify-center md:justify-start space-x-4 text-xl mt-4">
                         <a href="https://www.linkedin.com/company/rupeeit/" className="hover:text-yellow-400"><FaLinkedinIn /></a>
                         <a href="https://www.facebook.com/profile.php?id=61579010946823&rdid=xCjSWDa9NwIX7epG#" className="hover:text-yellow-400"><FaFacebookF /></a>
@@ -91,7 +91,7 @@ const Footer = () => {
             {/* Address + Copyright */}
             <div className="border-t border-gray-700 mt-10 pt-6 text-sm text-center space-y-4">
                 <p className="text-gray-400 hover:text-yellow-400 cursor-pointer">
-                    📍 WeWork Latitude, 9th floor, RMZ Latitude Commercial, Bellary Road, Hebbal, Near Godrej Apt, Bangalore, Karnataka 560024
+                    2nd Floor, 17, 7th Main Road, Stage 2, Indiranagar, Bengaluru, Karnataka – 560038
                 </p>
                 <p className="text-gray-500">© {new Date().getFullYear()} Rupeeit. All rights reserved</p>
             </div>

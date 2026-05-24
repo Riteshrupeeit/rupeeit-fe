@@ -78,12 +78,12 @@ function Blogs() {
                                                     alt="Rupeeit"
                                                     className=" rounded-full object-cover max-w-[100px]"
                                                 />
-                                                <div>
+                                                {/* <div>
                                                     <p className="text-sm text-white font-light">
                                                         Rupeeit 
                                                     </p>
                                                     <p className="text-xs text-gray-400">{blog.date}</p>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
